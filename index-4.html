@@ -255,7 +255,7 @@
 
         <main>
             <!-- slider-area_3-start -->
-            <div class="slider-area_4 slider__overlay-3 position-relative" data-background="assets/img/slider/slider-4.jpg" style="height: 600px;">
+            <div class="slider-area_4 slider__overlay-3 position-relative" data-background="assets/img/slider/slider-4.jpg" style="height: 400px;">
                 <div class="container">
                     <div class="flider-3">
                         <h2>ADI SHANKARA<br> INTERNATIONAL FOUNDATION</h2>
@@ -274,55 +274,233 @@
             <!-- slider-area_3-end -->
 
             <!-- preacing-area-start -->
-            <div id="peacing-area" class="preacing-area pt-120 pb-120">
+            <div class="news-sidebar-area pt-120 pb-80">
                 <div class="container">
-                    <h3 class="preacing-title text-center">The Trust
-                     </h3>
-                     <div class="row mt-80">
-                         <div class="col-lg-9">
-                             <div class="row">
-                                 <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="peacing_item mb-60">
-                                        <!-- <h5>Our Mission</h5> -->
-                                        <span>01</span>
-                                        <p>Adi Sankara International Foundation - <b>A global communion by disciples of the Jagadguru Adi Sankaracharya </b>. Adisankara International Foundation is a non-profitable Public Charitable trust, governed by the public trust Act of Kerala and the Indian Trusts Act, 1882 registered at Sreemoolanagaram Kalady in Kerala, India. 
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="peacing_item mb-60">
-                                        <!-- <h5>Our Vission</h5> -->
-                                        <span>02</span>
-                                        <p>The Trust is formed with the objective of creating a happy and peaceful society around the globe by propagating the values of ancient Indian way of life predominantly known as<b>‘SANATHANA DHARMA’</b> and the Philosophy <b>ADVAITHAM</b> (Spiritual Realisation of one’s true self) derived and taught by Jagadguru Adi Sankaracharya Swamji, who is regarded as the incarnation of <b>Lord Shiva</b> </p>
-                                    </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-3">
-                             <div class="peacing-img w-img mb-30">
-                                <img src="assets/img/about/about.png" alt="">
-                             </div>
-                         </div>
-                         <!-- <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-8">
                             <div class="row">
-                                <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="peacing_item mb-60">
-                                        <h5>Our Value</h5>
-                                        <span>03</span>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore is magna aliqua enim ad is.</p>
+                            
+                                <div class="single-news mb-50">
+                                    <div class="news-thumb">
+                                       <a href="news-details.html"><img src="assets/img/news/news-thum-2.jpg" alt="blog" class="img-fluid"></a>
+                                    </div>
+                                    <div class="news-detalis-content">
+                                     
+                                       <h4 class="news-title mt-20 mb-20">
+                                          <a href="news-details.html">Adi Sankara International Foundation</a>
+                                       </h4>
+                                       <p>A global communion by disciples of the Jagadguru Adi Sankaracharya . Adisankara International Foundation is a non-profitable Public Charitable trust, governed by the public trust Act of Kerala and the Indian Trusts Act, 1882 registered at Sreemoolanagaram Kalady in Kerala, India.</p>
+                                       <div class="read-button mt-30">
+                                          <a href="news-details.html" class="sb-btn">Read More</a>
+                                       </div>    
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="peacing_item mb-60">
-                                        <h5>Our Community</h5>
-                                        <span>04</span>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore is magna aliqua enim ad is.</p>
-                                    </div>
-                                </div>
+                             
                             </div>
-                        </div> -->
-                     </div>
+                     
+                        </div>
+
+                        <style>
+                            .slider {
+                                width: 100%;
+                                overflow: hidden;
+                            }
+
+                            .slide {
+                                display: none;
+                            }
+
+                            .slide img {
+                                width: 100%;
+                            }
+
+                            .active {
+                                display: block;
+                            }
+
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var slides = document.querySelectorAll('.slide');
+                                var currentSlide = 0;
+                                var slideInterval = setInterval(nextSlide, 2000); // Change slide every 2 seconds
+
+                                function nextSlide() {
+                                    slides[currentSlide].classList.remove('active');
+                                    currentSlide = (currentSlide + 1) % slides.length;
+                                    slides[currentSlide].classList.add('active');
+                                }
+                            });
+                        </script>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img src="assets/img/services/s1.jpg" alt="" style="height: 386px;">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/services/s2.jpg" alt="" style="height: 386px;">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/services/s3.jpg" alt="" style="height: 386px;">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/services/s4.jpg" alt="" style="height: 386px;">
+                                </div>
+                                <!-- Add more slides here -->
+                            </div>
+                            <div class="fnservices__content">
+                                <div class="sv-meta">
+                                    <span><i class="fal fa-calendar-alt"></i> September 15, 2018</span>
+                                </div>
+                                <h3><a href="services-sidebar-details.html">Lorem ipsum dolor sit amet, consectetur.</a></h3>
+                                <p>Lorem ipsum dolor sit ame, conse cte tur adipisicing elit, sed do eius mod tempor incididunt ut.</p>
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- <div class="widget mb-40">
+                                <div class="widget__title text-center">
+                                    <h3>Search</h3>
+                                </div>
+                                <div class="widget__search">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search your keyword...">
+                                        <button><i class="far fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div> -->
+                            <!-- <div class="widget widget-gallery mb-40">
+                                <div class="widget__title text-center">
+                                    <h3>Instagram</h3>
+                                </div>
+                                <div class="sidebar__img">
+                                    <div class="row gx-3">
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-1.jpg">
+                                                <img src="assets/img/gallery/gal-1.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-2.jpg">
+                                                <img src="assets/img/gallery/gal-2.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-3.jpg">
+                                                <img src="assets/img/gallery/gal-3.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-4.jpg">
+                                                <img src="assets/img/gallery/gal-4.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-5.jpg">
+                                                <img src="assets/img/gallery/gal-5.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                          <div class="sidebar__single-img w-img mb-15">
+                                             <a class="image-popups" href="assets/img/gallery/gal-6.jpg">
+                                                <img src="assets/img/gallery/gal-6.jpg" alt="">
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="col-4">
+                                        <div class="sidebar__single-img w-img mb-15">
+                                           <a class="image-popups" href="assets/img/gallery/gal-7.jpg">
+                                              <img src="assets/img/gallery/gal-7.jpg" alt="">
+                                           </a>
+                                        </div>
+                                     </div>
+                                     <div class="col-4">
+                                        <div class="sidebar__single-img w-img mb-15">
+                                           <a class="image-popups" href="assets/img/gallery/gal-8.jpg">
+                                              <img src="assets/img/gallery/gal-8.jpg" alt="">
+                                           </a>
+                                        </div>
+                                     </div>
+                                     <div class="col-4">
+                                        <div class="sidebar__single-img w-img mb-15">
+                                           <a class="image-popups" href="assets/img/gallery/gal-9.jpg">
+                                              <img src="assets/img/gallery/gal-9.jpg" alt="">
+                                           </a>
+                                        </div>
+                                     </div>
+                                    </div>
+                                 </div>
+                            </div> -->
+                         
+                            <!-- <div class="widget mb-40">
+                                <div class="widget__title text-center">
+                                    <h3>News</h3>
+                                </div>
+                                <ul class="recent-posts">
+                                    <li>
+                                        <div class="widget-posts-image">
+                                            <a href="news-details.html"><img src="assets/img/blog/sm-p1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="widget-posts-body">
+                                            <h6 class="widget-posts-title"><a href="blog-detnews-details.html">Alonso Kelina Falao Asiano Pero</a></h6>
+                                            <div class="widget-posts-meta">Raised: $56.900.00</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-posts-image">
+                                            <a href="news-details.html"><img src="assets/img/blog/sm-p2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="widget-posts-body">
+                                            <h6 class="widget-posts-title"><a href="news-details.html">It is a long established fact that a reader</a></h6>
+                                            <div class="widget-posts-meta">Raised: $56.900.00</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-posts-image">
+                                            <a href="news-details.html"><img src="assets/img/blog/sm-p3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="widget-posts-body">
+                                            <h6 class="widget-posts-title"><a href="news-details.html">Many desktop publish packages and web.</a></h6>
+                                            <div class="widget-posts-meta">Raised: $56.900.00</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-posts-image">
+                                            <a href="news-details.html"><img src="assets/img/blog/sm-p4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="widget-posts-body">
+                                            <h6 class="widget-posts-title"><a href="news-details.html">Various versions have evolved over the years</a></h6>
+                                            <div class="widget-posts-meta">Raised: $56.900.00</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-posts-image">
+                                            <a href="news-details.html"><img src="assets/img/blog/sm-p5.jpg" alt=""></a>
+                                        </div>
+                                        <div class="widget-posts-body">
+                                            <h6 class="widget-posts-title"><a href="news-details.html">Photo booth anim 8-bit PBR 3 wolf moon.</a></h6>
+                                            <div class="widget-posts-meta">Raised: $56.900.00</div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div> -->
+                      
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <!-- preacing-area-end -->
 
             <!-- causes-area-start -->

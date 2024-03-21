@@ -1035,7 +1035,7 @@ label {
 }
 
 .pt-120 {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .pt-125 {
@@ -1196,7 +1196,7 @@ label {
 }
 
 .pb-120 {
-  padding-bottom: 120px;
+  padding-bottom: 2px;
 }
 
 .pb-125 {
@@ -4238,7 +4238,7 @@ label {
 
 .fnservices__content {
   box-shadow: 0px 8px 16px 0px rgba(127, 127, 127, 0.1);
-  padding: 35px 30px;
+  padding: 50px 30px;
   margin: 0 15px;
   margin-top: -35px;
   position: relative;
@@ -5349,7 +5349,7 @@ label {
 
 .news-detalis-content {
   padding: 50px;
-  padding-top: 40px;
+  padding-top: 20px;
   border: 2px solid #e3e3e3;
 }
 @media (max-width: 575px) {
