@@ -468,7 +468,7 @@ label {
 }
 
 .mb-15 {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .mb-20 {
@@ -1196,7 +1196,7 @@ label {
 }
 
 .pb-120 {
-  padding-bottom: 2px;
+  padding-bottom: 80px;
 }
 
 .pb-125 {
@@ -6085,7 +6085,7 @@ label {
 /*  15. Page-title CSS
 /*----------------------------------------*/
 .page-ttle-area {
-  padding-top: 350px;
+  padding-top: 150px;
   padding-bottom: 170px;
   background-size: cover;
   background-position: center top;
@@ -6174,3 +6174,39 @@ label {
 }
 
 /*# sourceMappingURL=main.css.map */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #de6f00;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #982900;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
